@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura - Culinária Japonesa Autêntica</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='%23d4304f'%3E%3Cpath d='M50 20c-3 0-5 2-5 5 0 8-6 14-14 14s-14-6-14-14c0-3-2-5-5-5s-5 2-5 5c0 13 11 24 24 24 5 0 10-2 14-5 4 3 9 5 14 5 13 0 24-11 24-24 0-3-2-5-5-5s-5 2-5 5c0 8-6 14-14 14s-14-6-14-14c0-3-2-5-5-5z'/%3E%3Cpath d='M50 80c3 0 5-2 5-5 0-8 6-14 14-14s14 6 14 14c0 3 2 5 5 5s5-2 5-5c0-13-11-24-24-24-5 0-10 2-14 5-4-3-9-5-14-5-13 0-24 11-24 24 0 3 2 5 5 5s5-2 5-5c0-8 6-14 14-14s14 6 14 14c0 3 2 5 5 5z'/%3E%3Cpath d='M20 50c0 3 2 5 5 5 8 0 14 6 14 14s-6 14-14 14c-3 0-5 2-5 5s2 5 5 5c13 0 24-11 24-24 0-5-2-10-5-14 3-4 5-9 5-14 0-13-11-24-24-24-3 0-5 2-5 5s2 5 5 5c8 0 14 6 14 14s-6 14-14 14c-3 0-5 2-5 5z'/%3E%3Cpath d='M80 50c0-3-2-5-5-5-8 0-14-6-14-14s6-14 14-14c3 0 5-2 5-5s-2-5-5-5c-13 0-24 11-24 24 0 5 2 10 5 14-3 4-5 9-5 14 0 13 11 24 24 24 3 0 5-2 5-5s-2-5-5-5c-8 0-14-6-14-14s6-14 14-14c3 0 5-2 5-5z'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">桜</span>
+                    <span class="logo-name">Sakura</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Opiniões</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Japanese cuisine background" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-subtitle">Autêntica</span>
+                <span class="hero-main">Cozinha Japonesa</span>
+            </h1>
+            <p class="hero-description">Experimente a arte e a tradição do Japão através de pratos cuidadosamente preparados que celebram séculos de excelência culinária.</p>
+            <button class="cta-button" onclick="scrollToSection('menu')">
+                <span>Descubra o Menu</span>
+                <div class="button-overlay"></div>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section id="menu" class="featured-dishes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pratos em Destaque</h2>
+                <p class="section-subtitle">Descubra as criações exclusivas do nosso chef</p>
+            </div>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image-container">
+                        <img src="https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Sushi platter" class="dish-image">
+                        <div class="dish-overlay">
+                            <span class="dish-price">R$ 98,00</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Omakase Sushi Set</h3>
+                        <p class="dish-description">Seleção do chef dos melhores peixes da estação, preparados com arroz de sushi premium e técnicas tradicionais.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image-container">
+                        <img src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Ramen bowl" class="dish-image">
+                        <div class="dish-overlay">
+                            <span class="dish-price">R$ 72,00</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Tonkotsu Ramen</h3>
+                        <p class="dish-description">Caldo de ossos de porco rico e cremoso, cozido por 24 horas, servido com carne de porco chashu, ovo cozido macio e cebolinha fresca.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image-container">
+                        <img src="https://images.pexels.com/photos/4518841/pexels-photo-4518841.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tempura" class="dish-image">
+                        <div class="dish-overlay">
+                            <span class="dish-price">R$ 85,00</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Ebi Tempura</h3>
+                        <p class="dish-description">Camarões levemente empanados e perfeitamente fritos com vegetais da estação, servidos com molho tentsuyu tradicional para acompanhar.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image-container">
+                        <img src="https://images.pexels.com/photos/4518844/pexels-photo-4518844.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Wagyu beef" class="dish-image">
+                        <div class="dish-overlay">
+                            <span class="dish-price">R$ 260,00</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Bife Wagyu A5</h3>
+                        <p class="dish-description">Carne bovina Wagyu japonesa premium, grelhada à perfeição e servida com wasabi, sal marinho e vegetais da estação.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image-container">
+                        <img src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Miso soup" class="dish-image">
+                        <div class="dish-overlay">
+                            <span class="dish-price">R$ 22,00</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Sopa de Missô Tradicional</h3>
+                        <p class="dish-description">Caldo dashi autêntico com pasta de missô envelhecida, tofu macio, alga wakame e cebolinha fresca.</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image-container">
+                        <img src="https://images.pexels.com/photos/5946635/pexels-photo-5946635.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Matcha dessert" class="dish-image">
+                        <div class="dish-overlay">
+                            <span class="dish-price">R$ 42,00</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Parfait de Matcha</h3>
+                        <p class="dish-description">Camadas de sorvete de matcha premium, pasta doce de feijão vermelho, mochi e wafer crocante, finalizado com folha de ouro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">Nossa História</h2>
+                        <p class="section-subtitle">Tradição encontra inovação</p>
+                    </div>
+                    <p class="about-description">
+                        Fundado no coração de Tóquio e trazido à vida com paixão pela culinária japonesa autêntica, o Sakura representa a harmonia perfeita entre técnicas tradicionais e apresentação contemporânea. Nossos chefs mestres, treinados nas prestigiosas cozinhas do Japão, trazem receitas centenárias para a sua mesa.
+                    </p>
+                    <p class="about-description">
+                        Cada prato conta uma história de preparação meticulosa, ingredientes sazonais e o profundo respeito pela natureza que define a filosofia culinária japonesa. Desde a delicada arte de fazer sushi até os caldos complexos de nosso ramen, honramos o legado da gastronomia japonesa.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Chefs Mestres</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Chef japonês preparando comida" class="chef-image">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Que Nossos Convidados Dizem</h2>
+                <p class="section-subtitle">Experiências autênticas, momentos inesquecíveis</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"A experiência gastronômica japonesa mais autêntica fora do Japão. Cada prato era uma obra-prima, e a atenção aos detalhes foi extraordinária. O menu omakase foi absolutamente fenomenal!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Cliente" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Sarah Johnson</span>
+                                <span class="author-title">Crítica Gastronômica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"O Sakura me transportou de volta às minhas viagens por Tóquio. Os sabores são autênticos, a apresentação é linda, e o atendimento é impecável. Uma verdadeira jornada culinária!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Cliente" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Michael Chen</span>
+                                <span class="author-title">Blogueiro de Viagens</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"A carne wagyu estava perfeita, derretendo na boca, e o sushi foi o mais fresco que já provei. O ambiente é elegante mas confortável. Altamente recomendado!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Cliente" class="author-image">
+                            <div class="author-info">
+                                <span class="author-name">Emma Rodriguez</span>
+                                <span class="author-title">Chef</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-btn active" onclick="showTestimonial(0)"></button>
+                <button class="testimonial-btn" onclick="showTestimonial(1)"></button>
+                <button class="testimonial-btn" onclick="showTestimonial(2)"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Mantenha-se Conectado</h2>
+                <p class="newsletter-description">Inscreva-se em nossa newsletter para receitas exclusivas, menus sazonais e eventos especiais.</p>
+                <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                    <input type="email" placeholder="Digite seu endereço de email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-button">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">桜</span>
+                        <span class="logo-name">Sakura</span>
+                    </div>
+                    <p class="footer-description">Experimente o sabor autêntico do Japão em cada garfada.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Informações de Contato</h3>
+                    <div class="contact-info">
+                        <p>Rua Sakura, 123</p>
+                        <p>Distrito de Tóquio, TD 12345</p>
+                        <p>Telefone: +81 (0)3-1234-5678</p>
+                        <p>Email: info@sakura-restaurant.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Horários de Funcionamento</h3>
+                    <div class="opening-hours">
+                        <p>Segunda - Quinta: 17:00 - 22:00</p>
+                        <p>Sexta - Sábado: 17:00 - 23:00</p>
+                        <p>Domingo: 16:00 - 21:00</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <div class="footer-links">
+                        <a href="#home">Início</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#about">Sobre</a>
+                        <a href="#contact">Contato</a>
+                        <a href="#">Reservas</a>
+                        <a href="#">Eventos Privados</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Restaurante Sakura. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
